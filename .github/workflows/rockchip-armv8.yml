@@ -22,8 +22,10 @@ env:
   DIY_SH: scripts/custom.sh
   TOOLCHAIN_TAG: toolchain
   CLASH_BINARY_PLATFORM: armv8
-  TOOLCHAIN_RELEASE_UPLOAD: true
-  FIRMWARE_RELEASE_UPLOAD: true
+#  TOOLCHAIN_RELEASE_UPLOAD: true
+#  FIRMWARE_RELEASE_UPLOAD: true
+  TOOLCHAIN_RELEASE_UPLOAD: false
+  FIRMWARE_RELEASE_UPLOAD: false
   WEB_ROOT_PATH: /data/www/openwrt.cc
   TZ: Asia/Shanghai
 
