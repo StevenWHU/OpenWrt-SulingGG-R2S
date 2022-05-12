@@ -9,11 +9,11 @@
 name: Build rockchip/armv8 openwrt
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: 0 18 * * *
-  # watch:
-  #   types: started
+#   workflow_dispatch:
+#   schedule:
+#     - cron: 0 18 * * *
+  watch:
+    types: started
 
 env:
   CONFIG_FILE: config/rockchip/armv8.config
