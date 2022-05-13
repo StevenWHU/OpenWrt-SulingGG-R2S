@@ -12,8 +12,17 @@ on:
 #   workflow_dispatch:
 #   schedule:
 #     - cron: 0 18 * * *
-  watch:
-    types: started
+
+#  watch:
+#    types: started
+
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 
 env:
   CONFIG_FILE: config/rockchip/armv8.config
